@@ -27,17 +27,19 @@
   font-family: "Poppins", sans-serif;
 }
 
+section[id] {
+  scroll-margin-top: 65px;
+}
+
 header {
+  position: fixed;
   background-image: url("./img/fondo.jpg");
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 65px;
-  padding: 0px 40px;
   top: 0px;
-  margin: 0px auto;
-  position: fixed;
 }
 
 .logo {
@@ -46,7 +48,7 @@ header {
   height: 95%;
 }
 
-.navbar .navbar-list {
+.navbar-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,23 +71,29 @@ header {
   padding: 4px 10px;
   border-style: ridge;
   border-radius: 10px;
+  max-width: 1400px;
 }
 
 main {
   background: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 #hero {
   width: 85%;
-  max-width: 1300px;
-  background-size: 5000px;
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1400px;
   padding: 70px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.hero-info p {
+  display: flex;
+  text-align: justify;
 }
 
 .hero-info {
@@ -99,7 +107,6 @@ main {
 
 .hero-info h1 {
   width: 90%;
-  min-width: px;
   font-size: 44px;
   font-weight: 800;
   color: var(--text-white);
@@ -147,12 +154,13 @@ main {
 }
 
 #servicios {
-  max-width: 1300px;
+  max-width: 1400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0px;
   border-radius: 1rem;
+  padding-bottom: 20px;
+  margin: auto;
 }
 
 .servicios-info {
@@ -161,12 +169,10 @@ main {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  width: 60%;
+  width: 100%;
   color: var(--bg-white);
   border-radius: 1rem;
-  background-size: 1050px;
-  padding: 1rem;
-  padding: 10px;
+  padding: 20px 40px;
   border-style: ridge;
 }
 
@@ -176,6 +182,7 @@ main {
   color: var(--text-white);
   background-image: url("./img/fondo.jpg");
   background-size: 1000px;
+  border-style: ridge;
   padding: 10px;
   border-radius: 1rem;
   padding: 8px 20px;
@@ -191,4 +198,13 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+a {
+  transition: background-color 0.5s;
+}
+
+a:hover {
+  background-image: url("./img/fondo.jpg");
+  background-size: 500px;
 }
