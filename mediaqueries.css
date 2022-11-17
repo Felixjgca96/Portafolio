@@ -35,6 +35,14 @@
   .servicios-info {
     width: 85%;
   }
+
+  .contacto-contenedor h2,
+  .contacto-contenedor h3,
+  .contenedor-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 500px) {
@@ -49,6 +57,13 @@
   }
   .servicios-opciones li {
     text-align: justify;
+  }
+  .foto img {
+    width: 250px;
+  }
+  .habilidades-img img {
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -65,5 +80,12 @@
   }
   .container-img {
     margin-top: 20px;
+  }
+  .foto img {
+    width: 200px;
+  }
+  .habilidades-img img {
+    width: 60px;
+    height: 60px;
   }
 }
