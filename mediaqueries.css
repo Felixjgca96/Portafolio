@@ -43,6 +43,9 @@
     justify-content: center;
     align-items: center;
   }
+  #card-seccion p {
+    text-align: justify;
+  }
 }
 
 @media (max-width: 500px) {
