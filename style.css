@@ -39,6 +39,9 @@ header {
   justify-content: space-around;
   align-items: center;
   height: 65px;
+  padding: 0px 30px;
+  position: sticky;
+  position: -webkit-sticky;
   top: 0px;
 }
 
@@ -86,10 +89,11 @@ main {
 #hero {
   width: 85%;
   max-width: 1400px;
-  padding: 70px 0px;
+  padding: 20px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
 }
 .hero-info p {
   display: flex;
@@ -183,7 +187,6 @@ main {
   background-image: url("./img/fondo.jpg");
   background-size: 1000px;
   border-style: ridge;
-  padding: 10px;
   border-radius: 1rem;
   padding: 8px 20px;
 }
@@ -409,4 +412,14 @@ footer img {
   border-radius: 1rem;
   width: 120px;
   height: 120px;
+}
+
+.active {
+  background: var(--primary);
+}
+
+#menu-toggle,
+#cart-toggle,
+.menu-label {
+  display: none;
 }
